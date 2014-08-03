@@ -13,8 +13,8 @@
 # limitations under the License.
 
 # Camera
-#PRODUCT_COPY_FILES += \
-#    vendor/samsung/amazing/proprietary/lib/libcamera.so:system/lib/libcamera.so \
+PRODUCT_COPY_FILES += \
+    vendor/samsung/amazing/proprietary/lib/libcamera.so:system/lib/libcamera.so 
 #    vendor/samsung/amazing/proprietary/lib/libbrcmjpeg.so:system/lib/libbrcmjpeg.so \
 #    vendor/samsung/amazing/proprietary/lib/libarccamera.so:system/lib/libarccamera.so \
 #    vendor/samsung/amazing/proprietary/lib/libCaMotion.so:system/lib/libCaMotion.so \
