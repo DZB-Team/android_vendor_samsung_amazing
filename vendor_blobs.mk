@@ -28,6 +28,8 @@
 # Sensors
 PRODUCT_COPY_FILES += \
     vendor/samsung/amazing/proprietary/lib/hw/sensors.goldfish.so:system/lib/hw/sensors.goldfish.so \
-    vendor/samsung/amazing/proprietary/lib/hw/sensors.default.so:system/lib/hw/sensors.default.so
+    vendor/samsung/amazing/proprietary/lib/hw/sensors.default.so:system/lib/hw/sensors.default.so \
+    vendor/samsung/amazing/proprietary/lib/libacdapi_azi.so:system/lib/libacdapi_azi.so \
+    vendor/samsung/amazing/proprietary/lib/hw/lights.bcm21553.so:system/lib/hw/lights.bcm21553.so
 
 $(call inherit-product, vendor/samsung/bcm21553-common/vendor.mk)
