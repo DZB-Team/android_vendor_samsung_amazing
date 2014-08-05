@@ -15,7 +15,6 @@
 # Camera
 PRODUCT_COPY_FILES += \
     vendor/samsung/amazing/proprietary/lib/libcamera.so:system/lib/libcamera.so 
-<<<<<<< HEAD
 #    vendor/samsung/amazing/proprietary/lib/libbrcmjpeg.so:system/lib/libbrcmjpeg.so \
 #    vendor/samsung/amazing/proprietary/lib/libarccamera.so:system/lib/libarccamera.so \
 #    vendor/samsung/amazing/proprietary/lib/libCaMotion.so:system/lib/libCaMotion.so \
@@ -29,13 +28,22 @@ PRODUCT_COPY_FILES += \
 # Sensors
 PRODUCT_COPY_FILES += \
     vendor/samsung/amazing/proprietary/lib/hw/sensors.goldfish.so:system/lib/hw/sensors.goldfish.so \
-=======
 
 # Sensors
 PRODUCT_COPY_FILES += \
->>>>>>> a81b094e05a8ae90773d81aee6c1591056278a40
     vendor/samsung/amazing/proprietary/lib/hw/sensors.default.so:system/lib/hw/sensors.default.so \
     vendor/samsung/amazing/proprietary/lib/libacdapi_azi.so:system/lib/libacdapi_azi.so \
     vendor/samsung/amazing/proprietary/lib/hw/lights.bcm21553.so:system/lib/hw/lights.bcm21553.so
+
+# GPS
+PRODUCT_COPY_FILES += \
+    vendor/samsung/amazing/proprietary/lib/libsoc.so:system/lib/libsoc.so \
+    vendor/samsung/amazing/proprietary/bin/glgps:system/bin/glgps \
+    vendor/samsung/amazing/proprietary/bin/gps.cer:system/bin/gps.cer \
+    vendor/samsung/amazing/proprietary/etc/gps/glconfig.xml:system/etc/gps/glconfig.xml \
+    vendor/samsung/amazing/proprietary/etc/gps/glconfig2075.xml:system/etc/gps/glconfig2075.xml \
+    vendor/samsung/amazing/proprietary/etc/gps/glconfig4751.xml:system/etc/gps/glconfig4751.xml \
+    vendor/samsung/amazing/proprietary/etc/gps/glconfig47511.xml:system/etc/gps/glconfig47511.xml \
+    vendor/samsung/amazing/proprietary/lib/hw/gps.bcm21553.so:system/lib/hw/gps.bcm21553.so
 
 $(call inherit-product, vendor/samsung/bcm21553-common/vendor.mk)
