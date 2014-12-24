@@ -14,36 +14,41 @@
 
 # Camera
 PRODUCT_COPY_FILES += \
-    vendor/samsung/amazing/proprietary/lib/libcamera.so:system/lib/libcamera.so 
-#    vendor/samsung/amazing/proprietary/lib/libbrcmjpeg.so:system/lib/libbrcmjpeg.so \
-#    vendor/samsung/amazing/proprietary/lib/libarccamera.so:system/lib/libarccamera.so \
-#    vendor/samsung/amazing/proprietary/lib/libCaMotion.so:system/lib/libCaMotion.so \
-#    vendor/samsung/amazing/proprietary/lib/libPanoraMax1.so:system/lib/libPanoraMax1.so \
-#    vendor/samsung/amazing/proprietary/lib/libseccamera.so:system/lib/libseccamera.so \
-#    vendor/samsung/amazing/proprietary/lib/libseccameraadaptor.so:system/lib/libseccameraadaptor.so \
-#    vendor/samsung/amazing/proprietary/lib/libcamera_client.so:system/lib/libcamera_client.so \
-#    vendor/samsung/amazing/proprietary/lib/libcameraservice.so:system/lib/libcameraservice.so \
-#    vendor/samsung/amazing/proprietary/lib/libcaps.so:system/lib/libcaps.so
+    vendor/samsung/cooperve/proprietary/lib/libcamera.so:system/lib/libcamera.so
 
 # Sensors
 PRODUCT_COPY_FILES += \
-    vendor/samsung/amazing/proprietary/lib/hw/sensors.goldfish.so:system/lib/hw/sensors.goldfish.so \
-
-# Sensors
-PRODUCT_COPY_FILES += \
-    vendor/samsung/amazing/proprietary/lib/hw/sensors.default.so:system/lib/hw/sensors.default.so \
-    vendor/samsung/amazing/proprietary/lib/libacdapi_azi.so:system/lib/libacdapi_azi.so \
-    vendor/samsung/amazing/proprietary/lib/hw/lights.bcm21553.so:system/lib/hw/lights.bcm21553.so
+    vendor/samsung/cooperve/proprietary/lib/hw/sensors.default.so:system/lib/hw/sensors.default.so
 
 # GPS
 PRODUCT_COPY_FILES += \
     vendor/samsung/amazing/proprietary/lib/libsoc.so:system/lib/libsoc.so \
     vendor/samsung/amazing/proprietary/bin/glgps:system/bin/glgps \
     vendor/samsung/amazing/proprietary/bin/gps.cer:system/bin/gps.cer \
-    vendor/samsung/amazing/proprietary/etc/gps/glconfig.xml:system/etc/gps/glconfig.xml \
-    vendor/samsung/amazing/proprietary/etc/gps/glconfig2075.xml:system/etc/gps/glconfig2075.xml \
-    vendor/samsung/amazing/proprietary/etc/gps/glconfig4751.xml:system/etc/gps/glconfig4751.xml \
     vendor/samsung/amazing/proprietary/etc/gps/glconfig47511.xml:system/etc/gps/glconfig47511.xml \
     vendor/samsung/amazing/proprietary/lib/hw/gps.bcm21553.so:system/lib/hw/gps.bcm21553.so
 
-$(call inherit-product, vendor/samsung/bcm21553-common/vendor.mk)
+# Encoding / decoding (not working)
+PRODUCT_COPY_FILES += \
+    vendor/samsung/amazing/proprietary/lib/libBRCM_omx_core.so:system/lib/libBRCM_omx_core.so \
+    vendor/samsung/amazing/proprietary/lib/libomx_aacdec_sharedlibrary.so:system/lib/libomx_aacdec_sharedlibrary.so \
+    vendor/samsung/amazing/proprietary/lib/libomx_amrdec_sharedlibrary.so:system/lib/libomx_amrdec_sharedlibrary.so \
+    vendor/samsung/amazing/proprietary/lib/libomx_avcdec_sharedlibrary.so:system/lib/libomx_avcdec_sharedlibrary.so \
+    vendor/samsung/amazing/proprietary/lib/libomx_m4vdec_sharedlibrary.so:system/lib/libomx_m4vdec_sharedlibrary.so \
+    vendor/samsung/amazing/proprietary/lib/libomx_mp3dec_sharedlibrary.so:system/lib/libomx_mp3dec_sharedlibrary.so \
+    vendor/samsung/amazing/proprietary/lib/libomx_sharedlibrary.so:system/lib/libomx_sharedlibrary.so \
+    vendor/samsung/amazing/proprietary/lib/libbrcmjpeg.so:system/lib/libbrcmjpeg.so
+
+# WIFI
+PRODUCT_COPY_FILES += \
+    vendor/samsung/amazing/proprietary/etc/firmware/bcm4330_aps.bin:system/etc/firmware/bcm4330_aps.bin \
+    vendor/samsung/amazing/proprietary/etc/firmware/bcm4330_sta.bin:system/etc/firmware/bcm4330_sta.bin \
+    vendor/samsung/amazing/proprietary/etc/firmware/nvram.txt:system/etc/firmware/nvram.txt \
+    vendor/samsung/amazing/proprietary/etc/firmware/RC_248_WPA.bin:system/etc/firmware/RC_248_WPA.bin \
+    vendor/samsung/amazing/proprietary/bin/wlandutservice:system/bin/wlandutservice
+
+# RIL
+PRODUCT_COPY_FILES += \
+    vendor/samsung/amazing/proprietary/lib/libbrcm_ril.so:system/lib/libbrcm_ril.so \
+    vendor/samsung/amazing/proprietary/lib/liburilclient.so:system/lib/liburilclient.so \
+    vendor/samsung/amazing/proprietary/lib/libasound.so:system/lib/libasound.so
