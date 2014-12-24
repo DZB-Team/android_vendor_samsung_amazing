@@ -14,11 +14,11 @@
 
 # Camera
 PRODUCT_COPY_FILES += \
-    vendor/samsung/cooperve/proprietary/lib/libcamera.so:system/lib/libcamera.so
+    vendor/samsung/amazing/proprietary/lib/libcamera.so:system/lib/libcamera.so
 
 # Sensors
 PRODUCT_COPY_FILES += \
-    vendor/samsung/cooperve/proprietary/lib/hw/sensors.default.so:system/lib/hw/sensors.default.so
+    vendor/samsung/amazing/proprietary/lib/hw/sensors.default.so:system/lib/hw/sensors.default.so
 
 # GPS
 PRODUCT_COPY_FILES += \
