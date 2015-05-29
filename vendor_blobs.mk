@@ -12,22 +12,6 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# Camera
-PRODUCT_COPY_FILES += \
-    vendor/samsung/amazing/proprietary/lib/libcamera.so:system/lib/libcamera.so
-
-# Sensors
-PRODUCT_COPY_FILES += \
-    vendor/samsung/amazing/proprietary/lib/hw/sensors.default.so:system/lib/hw/sensors.default.so
-
-# GPS
-PRODUCT_COPY_FILES += \
-    vendor/samsung/amazing/proprietary/lib/libsoc.so:system/lib/libsoc.so \
-    vendor/samsung/amazing/proprietary/bin/glgps:system/bin/glgps \
-    vendor/samsung/amazing/proprietary/bin/gps.cer:system/bin/gps.cer \
-    vendor/samsung/amazing/proprietary/etc/gps/glconfig47511.xml:system/etc/gps/glconfig47511.xml \
-    vendor/samsung/amazing/proprietary/lib/hw/gps.bcm21553.so:system/lib/hw/gps.bcm21553.so
-
 # Encoding / decoding (not working)
 PRODUCT_COPY_FILES += \
     vendor/samsung/amazing/proprietary/lib/libBRCM_omx_core.so:system/lib/libBRCM_omx_core.so \
@@ -38,6 +22,18 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/amazing/proprietary/lib/libomx_mp3dec_sharedlibrary.so:system/lib/libomx_mp3dec_sharedlibrary.so \
     vendor/samsung/amazing/proprietary/lib/libomx_sharedlibrary.so:system/lib/libomx_sharedlibrary.so \
     vendor/samsung/amazing/proprietary/lib/libbrcmjpeg.so:system/lib/libbrcmjpeg.so
+
+# Bluetooth
+PRODUCT_COPY_FILES += \
+    vendor/samsung/amazing/proprietary/etc/firmware/BCM4330B1_002.001.003.0634.0652.hcd:system/etc/firmware/BCM4330B1_002.001.003.0634.0652.hcd
+
+# GPS
+PRODUCT_COPY_FILES += \
+    vendor/samsung/amazing/proprietary/lib/libsoc.so:system/lib/libsoc.so \
+    vendor/samsung/amazing/proprietary/bin/glgps:system/bin/glgps \
+    vendor/samsung/amazing/proprietary/bin/gps.cer:system/bin/gps.cer \
+    vendor/samsung/amazing/proprietary/etc/gps/glconfig4751.xml:system/etc/gps/glconfig4751.xml \
+    vendor/samsung/amazing/proprietary/lib/hw/gps.bcm21553.so:system/lib/hw/gps.bcm21553.so
 
 # WIFI
 PRODUCT_COPY_FILES += \
@@ -52,3 +48,14 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/amazing/proprietary/lib/libbrcm_ril.so:system/lib/libbrcm_ril.so \
     vendor/samsung/amazing/proprietary/lib/liburilclient.so:system/lib/liburilclient.so \
     vendor/samsung/amazing/proprietary/lib/libasound.so:system/lib/libasound.so
+
+# Sensors
+PRODUCT_COPY_FILES += \
+    vendor/samsung/amazing/proprietary/bin/memsicd:system/bin/memsicd
+# Camera
+PRODUCT_COPY_FILES += \
+    vendor/samsung/amazing/proprietary/lib/libcamera.so:system/lib/libcamera.so
+
+# Sensors
+PRODUCT_COPY_FILES += \
+    vendor/samsung/amazing/proprietary/lib/hw/sensors.default.so:system/lib/hw/sensors.default.so
