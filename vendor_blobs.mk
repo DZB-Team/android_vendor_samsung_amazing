@@ -52,7 +52,7 @@ PRODUCT_COPY_FILES += \
 # Sensors
 PRODUCT_COPY_FILES += \
     vendor/samsung/amazing/proprietary/bin/memsicd:system/bin/memsicd \
-    vendor/samsung/amazing/proprietary/lib/libacdapi_azi.so:system/lib/libacdapi_azi.so
+     vendor/samsung/torino/proprietary/lib/libacdapi_azi.so:system/lib/libacdapi_azi.so
 
 # Camera
 PRODUCT_COPY_FILES += \
