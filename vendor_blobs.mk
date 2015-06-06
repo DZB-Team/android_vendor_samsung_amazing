@@ -23,10 +23,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/amazing/proprietary/lib/libomx_sharedlibrary.so:system/lib/libomx_sharedlibrary.so \
     vendor/samsung/amazing/proprietary/lib/libbrcmjpeg.so:system/lib/libbrcmjpeg.so
 
-# Bluetooth
-PRODUCT_COPY_FILES += \
-    vendor/samsung/amazing/proprietary/etc/firmware/BCM4330B1_002.001.003.0634.0652.hcd:system/etc/firmware/BCM4330B1_002.001.003.0634.0652.hcd
-
 # GPS
 PRODUCT_COPY_FILES += \
     vendor/samsung/amazing/proprietary/lib/libsoc.so:system/lib/libsoc.so \
@@ -51,13 +47,9 @@ PRODUCT_COPY_FILES += \
 
 # Sensors
 PRODUCT_COPY_FILES += \
-    vendor/samsung/amazing/proprietary/bin/memsicd:system/bin/memsicd \
-    vendor/samsung/amazing/proprietary/lib/libacdapi_azi.so:system/lib/libacdapi_azi.so
+    vendor/samsung/amazing/proprietary/lib/libacdapi_azi.so:system/lib/libacdapi_azi.so \
+    vendor/samsung/amazing/proprietary/lib/hw/sensors.default.so:system/lib/hw/sensors.default.so
 
 # Camera
 PRODUCT_COPY_FILES += \
     vendor/samsung/amazing/proprietary/lib/libcamera.so:system/lib/libcamera.so
-
-# Sensors
-PRODUCT_COPY_FILES += \
-    vendor/samsung/amazing/proprietary/lib/hw/sensors.default.so:system/lib/hw/sensors.default.so
