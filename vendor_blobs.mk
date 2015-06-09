@@ -28,7 +28,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/amazing/proprietary/lib/libsoc.so:system/lib/libsoc.so \
     vendor/samsung/amazing/proprietary/bin/glgps:system/bin/glgps \
     vendor/samsung/amazing/proprietary/bin/gps.cer:system/bin/gps.cer \
-    vendor/samsung/amazing/proprietary/etc/gps/glconfig4751.xml:system/etc/gps/glconfig4751.xml \
+    vendor/samsung/amazing/proprietary/etc/gps/glconfig47511.xml:system/etc/gps/glconfig4751.xml \
     vendor/samsung/amazing/proprietary/lib/hw/gps.bcm21553.so:system/lib/hw/gps.bcm21553.so
 
 # WIFI
